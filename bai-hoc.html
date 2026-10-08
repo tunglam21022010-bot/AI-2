@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The AI Detective | AI - SHORT CHECK</title><meta name="description" content="Hồ sơ 001: Những video bạn nhìn thấy có đáng tin? — học liệu tương tác của AI-SHORT CHECK.">
+<link rel="icon" type="image/png" sizes="32x32" href="logo.png"><link rel="stylesheet" href="style.css">
+<style>
+.case-grid{display:grid;grid-template-columns:1fr;gap:14px}
+.case-card{all:unset;box-sizing:border-box;cursor:pointer;display:grid;grid-template-columns:52px 1fr auto;column-gap:20px;row-gap:2px;align-items:center;padding:20px 26px;border-radius:20px;color:#fff;background:linear-gradient(135deg,#20243b,#5b2f2b);position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.case-card:nth-child(3n+2){background:linear-gradient(135deg,#5b4034,#8a6a55)}
+.case-card:nth-child(3n){background:linear-gradient(135deg,#68707f,#20243b)}
+.case-card:hover,.case-card:focus-visible{transform:translateY(-3px);box-shadow:var(--shadow)}
+.case-card:focus-visible{outline:3px solid var(--tan);outline-offset:3px}
+.case-card .ico{grid-column:1;grid-row:1/4;font-size:32px;line-height:1;text-align:center}
+.case-card .tag{grid-column:2;font-size:11px;font-weight:800;letter-spacing:.05em;color:var(--tan)}
+.case-card h3{grid-column:2;color:#fff;font-size:20px;line-height:1.25;margin:0}
+.case-card p{grid-column:2;margin:0;font-size:14px;color:#eee;line-height:1.5}
+.case-card .go{grid-column:3;grid-row:1/4;font-weight:800;font-size:14px;white-space:nowrap}
+.case-card.intro{grid-template-columns:76px 1fr auto;column-gap:26px;padding:40px 34px;border-radius:28px;row-gap:6px}
+.case-card.intro .ico{font-size:56px}
+.case-card.intro .tag{font-size:13px}
+.case-card.intro h3{font-size:36px}
+.case-card.intro p{font-size:16px;max-width:640px}
+.case-card.intro .go{font-size:15px}
+.case-view{max-width:820px;margin:auto}
+.case-view .tag{font-size:13px;font-weight:800;color:var(--coffee)}
+.case-view h2{margin:6px 0 18px}
+.case-view p,.case-view li{font-size:18px;line-height:1.8;color:#4a4957}
+.case-view h4{font-family:Manrope,sans-serif;font-size:20px;color:var(--space);margin:28px 0 8px}
+.case-view ul{padding-left:22px;margin:8px 0 16px}
+.case-view .quote{padding:6px 0 6px 18px;border-left:4px solid var(--tan);margin:0 0 18px}
+.case-view .quote p{margin:2px 0;font-style:italic}
+.case-view .callout p{margin:0}
+.case-nav{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:34px;padding-top:20px;border-top:1px solid var(--line)}
+@media(max-width:800px){.case-card,.case-card.intro{grid-template-columns:44px 1fr;column-gap:14px;padding:18px}.case-card .go,.case-card.intro .go{grid-column:2;grid-row:auto;margin-top:6px}.case-card .ico{font-size:28px}.case-card.intro .ico{font-size:38px}.case-card.intro h3{font-size:26px}.case-view p,.case-view li{font-size:17px}}
+</style></head><body>
+<header class="site-header">
+ <div class="container nav">
+  <a class="brand" href="index.html"><span class="logo">ASC</span><span>AI - SHORT CHECK</span></a>
+  <nav class="navlinks">
+   <a href="index.html">Trang chủ</a>
+   <a href="hieu-ve-video-ai.html">Hiểu về video AI</a>
+   <a href="luyen-tap.html">Luyện tập</a>
+   <a href="thu-vien.html">Thư viện</a>
+   <a href="hoi-dap.html">Hỏi & Đáp</a>
+  </nav>
+ </div>
+</header>
+<main>
+<section class="page-hero"><div class="container"><span class="eyebrow">Thư viện · Học liệu 03</span><h1>The AI Detective</h1><p class="lead">Khám phá |Hồ sơ 001| cùng The AI Detective để tìm ra sự thật trong thế giới của công nghệ AI</p></div></section>
+
+<section class="section"><div class="container">
+<div class="case-grid" id="caseGrid">
+ <button class="case-card intro" type="button"><span class="ico">🔍</span><span class="tag">HỒ SƠ 001 · INVESTIGATION FILE 001</span><h3>The AI Detective</h3><p>Are the Videos You See Trustworthy? Đọc lời mở đầu trước khi nhận nhiệm vụ.</p><span class="go">Mở hồ sơ →</span></button>
+ <button class="case-card" type="button"><span class="ico">🎭</span><span class="tag">CASE #01</span><h3>A perfect mask</h3><p>Video ngắn do AI tạo là gì và có những đặc điểm nào?</p><span class="go">Mở bài học →</span></button>
+ <button class="case-card" type="button"><span class="ico">🔎</span><span class="tag">CASE #02</span><h3>What lies beneath the surface?</h3><p>“Video có thật không?” và “Thông tin có đúng không?” là hai câu hỏi khác nhau.</p><span class="go">Mở bài học →</span></button>
+ <button class="case-card" type="button"><span class="ico">👣</span><span class="tag">CASE #03</span><h3>Clues</h3><p>Dấu hiệu nhận biết video AI qua hình ảnh và âm thanh.</p><span class="go">Mở bài học →</span></button>
+ <button class="case-card" type="button"><span class="ico">💡</span><span class="tag">CASE #04</span><h3>Crack the Case</h3><p>Truy tìm “dấu chân”, thời điểm và bối cảnh của video.</p><span class="go">Mở bài học →</span></button>
+ <button class="case-card" type="button"><span class="ico">🎒</span><span class="tag">FINAL</span><h3>Detective Survival Kit</h3><p>Hành động có trách nhiệm với những gì bạn tìm thấy.</p><span class="go">Mở bài học →</span></button>
+</div>
+
+<article class="case-view hidden">
+ <div class="tag">🔍 HỒ SƠ 001</div><h2>THE AI DETECTIVE</h2>
+ <p><strong>Investigation File 001: Are the Videos You See Trustworthy?</strong></p>
+ <p>Chào mừng Nhà thám tử,</p>
+ <p>Mỗi ngày, chúng ta bị cuốn vào hàng chục video ngắn trên các nền tảng mạng xã hội. Có video khiến bạn bật cười, có video khiến bạn bất ngờ, cũng có video khiến bạn lập tức muốn bấm “Chia sẻ” cho bạn bè. Nhưng trong thế giới của AI, những gì trông có vẻ thật chưa chắc đã là sự thật…</p>
+ <p>Đến với Hồ sơ điều tra ngày hôm nay, nhiệm vụ của bạn không chỉ đơn thuần dừng ở việc đoán “Đâu là video do AI tạo”. Với bộ óc nhanh nhạy và con mắt tinh tường, AI Detective cần đặt câu hỏi trước vấn đề, tìm manh mối, kiểm tra những bằng chứng có sẵn và đưa ra phán quyết có căn cứ. Hãy cùng bóc tách từng lớp của vụ án để đi đến phán quyết cuối cùng!</p>
+ <div class="case-nav"><button class="btn btn-ghost back" type="button">← Về danh sách</button><button class="btn btn-primary next" type="button">Case #01 →</button></div>
+</article>
+
+<article class="case-view hidden">
+ <div class="tag">CASE #01</div><h2>🎭 A perfect mask</h2>
+ <p>Video ngắn do AI tạo là các đoạn video có thời lượng ngắn (thường từ vài giây đến dưới 2-3 phút) mà toàn bộ hoặc phần lớn các công đoạn sản xuất như viết kịch bản, tạo hình ảnh, lồng tiếng, hoạt hình và dựng phim - được thực hiện tự động bằng các công nghệ trí tuệ nhân tạo. Những sản phẩm video ngắn có đặc điểm như sau:</p>
+ <ul>
+  <li><strong>Short Duration (Thời lượng ngắn):</strong> Thường kéo dài từ 15 giây đến vài phút.</li>
+  <li><strong>Automated Production (Sản xuất tự động):</strong> Người dùng chỉ cần nhập yêu cầu bằng văn bản (prompt), hệ thống AI generator sẽ tự động tạo ra chuyển động, giọng nói và hình ảnh giống người thật mà không cần đến phương pháp quay chụp truyền thống.</li>
+  <li><strong>High Speed and Low Cost (Tốc độ cao và chi phí thấp):</strong> Giúp tạo ra số lượng lớn nội dung hoặc các tập phim ngắn hấp dẫn trong một khoảng thời gian ngắn.</li>
+ </ul>
+ <div class="case-nav"><button class="btn btn-ghost back" type="button">← Về danh sách</button><button class="btn btn-primary next" type="button">Case #02 →</button></div>
+</article>
+
+<article class="case-view hidden">
+ <div class="tag">CASE #02</div><h2>🔎 What lies beneath the surface?</h2>
+ <div class="quote"><p>“Video trông giống thật nhỉ?”</p><p>“Liệu có phải được tạo bằng AI không?”</p><p>“Video có đang cung cấp thông tin thực không?”</p></div>
+ <p>Đây là những câu hỏi ta thường bắt gặp trên mỗi trang mạng xã hội ngày nay. Một video có thể trông rất thật nhưng vẫn được tạo bằng AI; ngược lại, một video được quay bằng máy thật và nhân vật thật vẫn có thể chứa thông tin sai. Vì vậy, “video có thật không?” và “thông tin trong video có đúng không?” là hai câu hỏi khác nhau.</p>
+ <p>Khi xem một video, cần tách quá trình đánh giá thành hai bước:</p>
+ <ul>
+  <li>Trước hết, hãy quan sát cách video được tạo hoặc trình bày để nhận diện được đâu là video do AI tạo, đâu là video do người thật quay.</li>
+  <li>Sau khi đã kiểm chứng được “độ thật” của phần hình thức, hãy kiểm tra những thông tin mà video cung cấp.</li>
+ </ul>
+ <div class="callout"><p><strong>Ghi nhớ:</strong> “Đây là AI” không phải câu trả lời cho câu hỏi “Điều này có đúng không?”. Hãy luôn kiểm tra “nguồn gốc” và “tính chính xác của nội dung” như hai vấn đề riêng biệt.</p></div>
+ <div class="case-nav"><button class="btn btn-ghost back" type="button">← Về danh sách</button><button class="btn btn-primary next" type="button">Case #03 →</button></div>
+</article>
+
+<article class="case-view hidden">
+ <div class="tag">CASE #03</div><h2>👣 Clues</h2>
+ <p><strong>Đã phát hiện ra những dấu hiệu đáng nghi!</strong></p>
+ <div class="quote"><p>Khuôn miệng chuyển động không hoàn toàn khớp với âm thanh…</p><p>Ánh mắt thiếu tự nhiên…</p><p>Hình dạng bàn tay thay đổi trong một khoảnh khắc…</p></div>
+ <p>Chỉ cần một chút tinh mắt và nhạy bén, AI Detective hoàn toàn có thể chỉ ra những biểu hiện của một “video ngắn do AI tạo”:</p>
+ <h4>👣 Hình ảnh - Khi vỏ bọc không hoàn hảo</h4>
+ <ul>
+  <li><strong>Inconsistent details (Chi tiết không đồng nhất):</strong> Các chi tiết trên khuôn mặt, bàn tay, ngón tay, răng, tóc hoặc trang phục có thể bị biến dạng, thay đổi bất thường giữa các khung hình.</li>
+  <li><strong>Unnatural movements (Chuyển động thiếu tự nhiên):</strong> Biểu cảm đôi khi thiếu tự nhiên: mắt nhìn không đúng hướng, chớp mắt bất thường hoặc khuôn mặt thay đổi nhẹ khi nhân vật nói.</li>
+  <li><strong>Overly perfect appearance (Ngoại hình quá hoàn hảo):</strong> Nhân vật có thể quá hoàn hảo: làn da không có khuyết điểm, khuôn mặt cân đối bất thường, chuyển động mượt đến mức thiếu tự nhiên.</li>
+  <li><strong>Distorted objects (Vật thể bị biến dạng):</strong> Những vật thể ở phía sau có thể xuất hiện rồi biến mất, thay đổi hình dạng hoặc không tuân theo logic vật lý.</li>
+ </ul>
+ <h4>👣 Âm thanh - Khi giọng nói để lộ “danh tính”</h4>
+ <ul>
+  <li><strong>Unnatural Pronunciation:</strong> Giọng đọc có thể quá đều, thiếu những thay đổi tự nhiên về cao độ, tốc độ và cảm xúc. Một số âm tiết được phát âm hơi “tròn” hoặc cứng, đặc biệt ở những từ khó, tên riêng hay từ nước ngoài.</li>
+  <li><strong>Inappropriate Pauses:</strong> Cách ngắt nghỉ đôi khi không phù hợp với ý nghĩa câu nói.</li>
+  <li><strong>Lip-Sync Mismatch:</strong> Khẩu hình không hoàn toàn khớp với âm thanh: miệng đã chuyển sang âm khác nhưng giọng vẫn đang phát âm âm trước đó.</li>
+  <li><strong>Audio Changes:</strong> Âm lượng, tiếng vọng hoặc chất lượng âm thanh có thể thay đổi đột ngột giữa các đoạn.</li>
+ </ul>
+ <div class="case-nav"><button class="btn btn-ghost back" type="button">← Về danh sách</button><button class="btn btn-primary next" type="button">Case #04 →</button></div>
+</article>
+
+<article class="case-view hidden">
+ <div class="tag">CASE #04</div><h2>💡 Crack the Case</h2>
+ <p>Một video có thể xuất hiện trên hàng chục tài khoản khác nhau, nhưng phiên bản đầu tiên bạn nhìn thấy chưa chắc là phiên bản đúng nhất hoặc duy nhất được đăng tải đâu nha! Một video khi bị cắt khỏi bối cảnh, đăng lại nhiều lần hoặc gắn thêm một dòng chú thích mới hoàn toàn có thể khiến chúng ta hiểu sai thông tin.</p>
+ <p>Vì vậy, trước khi vội tin bất cứ video ngắn nào, tại sao ta lại không thử qua những “bí kíp” dưới đây của AI Detective:</p>
+ <h4>💡 Tìm “dấu chân” của video (Track the Video’s “Footprints”)</h4>
+ <ul>
+  <li>Kiểm tra tài khoản đang đăng video: Đây có phải tài khoản chính thức, nhân chứng hoặc nguồn có liên quan trực tiếp không? (Kiểm chứng thông qua việc xem video có được ghi nguồn, gắn watermark, tên tác giả hoặc tài khoản gốc không)</li>
+  <li>So sánh các phiên bản khác nhau: video nào xuất hiện sớm hơn và phiên bản nào có đầy đủ bối cảnh hơn?</li>
+  <li>Ngoài ra, bạn cũng có thể tìm kiếm những câu nói, hình ảnh hoặc đoạn video đặc trưng để xem nó đã xuất hiện ở đâu trước đó.</li>
+ </ul>
+ <h4>💡 Kiểm tra thời điểm (Check the timeline)</h4>
+ <p>Một video cũ được đăng lại vào thời điểm hiện tại có thể khiến người xem tưởng rằng một sự việc trong quá khứ vừa xảy ra. Vì vậy, hãy xác nhận lại:</p>
+ <ul><li>Video được đăng vào ngày nào?</li><li>Sự kiện trong video thực sự xảy ra vào thời điểm nào?</li></ul>
+ <h4>💡 Đặt video trở lại đúng bối cảnh (Put the video into context)</h4>
+ <ul>
+  <li>Chuyện gì xảy ra trước và sau đoạn video này?</li>
+  <li>Video có bị cắt mất phần mở đầu hoặc kết thúc không?</li>
+  <li>Địa điểm, nhân vật, sự kiện trong video có khớp với chú thích đi kèm không?</li>
+  <li>Có nguồn tin đáng tin cậy nào khác đưa tin về cùng sự việc không?</li>
+ </ul>
+ <div class="callout"><p>Nhờ có trí thông minh và tài suy luận logic, The AI Detective đã thành công giải được vụ án khó nhằn, khép lại trang cuối cùng của Hồ sơ 001: Những video bạn nhìn thấy có đáng tin?</p></div>
+ <div class="case-nav"><button class="btn btn-ghost back" type="button">← Về danh sách</button><button class="btn btn-primary next" type="button">Detective Survival Kit →</button></div>
+</article>
+
+<article class="case-view hidden">
+ <div class="tag">FINAL</div><h2>Detective Survival Kit</h2>
+ <p>Vụ án đã kết thúc, nhưng nhiệm vụ của những nhà thám tử thì chưa dừng lại ở đây. Một AI Detective thực thụ không chỉ biết phát hiện và kiểm chứng thông tin, mà còn phải biết cách hành động có trách nhiệm với những gì mình tìm thấy.</p>
+ <h4>📌 Dùng AI có trách nhiệm (Use AI Responsibly)</h4>
+ <ul>
+  <li>Hãy sử dụng video AI như một công cụ hỗ trợ học tập, ĐẶC BIỆT không xem chúng như nguồn thông tin tuyệt đối.</li>
+  <li>Khi sử dụng hình ảnh, video hoặc nội dung của người khác; cần ghi rõ nguồn và tôn trọng quyền sở hữu của họ.</li>
+  <li>Không tự ý sử dụng, chỉnh sửa hoặc tạo nội dung AI có hình ảnh của người khác theo cách có thể gây hiểu lầm hoặc tổn hại.</li>
+ </ul>
+ <h4>🚪 Biết khi nào nên “rời khỏi hiện trường” (Know When to “Leave the Scene”)</h4>
+ <ul>
+  <li>Không phải video nào cũng đáng để tiếp tục xem (đặc biệt khi nội dung truyền tải nội dung cực đoan; gây sợ hãi, tức giận hoặc khó chịu).</li>
+  <li>Cần nhận biết cảm xúc của bản thân và chủ động dừng xem khi cần thiết.</li>
+  <li>Điều chỉnh thời gian sử dụng video ngắn để tránh bị cuốn vào việc xem liên tục.</li>
+ </ul>
+ <h4>👥 Khi vụ án quá khó, hãy tìm đến đồng đội (When the Case Gets Too Difficult, Turn to Your Team)</h4>
+ <p>Đừng vội đưa ra kết luận khi gặp một video đáng ngờ, bạn nhé! Hãy học cách:</p>
+ <ul>
+  <li>Trao đổi với cha mẹ, thầy cô hoặc người lớn đáng tin cậy khi nội dung gây hoang mang, đáng sợ hoặc có khả năng ảnh hưởng đến bản thân.</li>
+  <li>Học cách đặt câu hỏi và tìm kiếm sự hỗ trợ thay vì tin hoặc chia sẻ ngay lập tức.</li>
+ </ul>
+ <div class="case-nav"><button class="btn btn-ghost back" type="button">← Về danh sách</button><a class="btn btn-primary" href="thu-vien.html">Về Thư viện</a></div>
+</article>
+</div></section>
+</main>
+
+<footer class="footer"><div class="container"><strong>AI - SHORT CHECK</strong> · Không gian học tập về nhận diện, kiểm chứng và sử dụng video AI có trách nhiệm.</div></footer>
+<script src="script.js"></script>
+<script>
+(function(){
+  var grid=document.getElementById('caseGrid');
+  var cards=[].slice.call(grid.querySelectorAll('.case-card'));
+  var views=[].slice.call(document.querySelectorAll('.case-view'));
+  function show(i){
+    grid.classList.add('hidden');
+    views.forEach(function(v,k){v.classList.toggle('hidden',k!==i)});
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+  function list(){
+    views.forEach(function(v){v.classList.add('hidden')});
+    grid.classList.remove('hidden');
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+  cards.forEach(function(c,i){c.addEventListener('click',function(){show(i)})});
+  views.forEach(function(v,i){
+    var b=v.querySelector('.back'), n=v.querySelector('.next');
+    if(b)b.addEventListener('click',list);
+    if(n)n.addEventListener('click',function(){show(i+1)});
+  });
+})();
+</script></body></html>
